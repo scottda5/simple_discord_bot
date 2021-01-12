@@ -14,11 +14,12 @@ client.on('ready', () => {
 
 client.on('message', message => {
 
-    if (message.content === 'ping') {
+    if (message.content.includes('@scott_g')) {
+       var user = message.member.tag
+       var reply = '!warn @' + user + '  don\t ping owner.  Go read the rules #welcome-rules'
+       message.reply(reply);
 
-       message.reply('pong');
-
-       }
+    }
 
 });
 
