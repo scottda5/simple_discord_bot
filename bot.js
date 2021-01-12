@@ -13,7 +13,7 @@ client.on('ready', () => {
  
 
 client.on('message', message => {
-    //console.log(message)
+    console.log(message)
     if (message.content.includes('<@!343496726302162944>')) {
        var user = message.author.id
        var channelId = message.channel.id
