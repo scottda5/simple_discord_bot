@@ -13,14 +13,12 @@ client.on('ready', () => {
  
 
 client.on('message', message => {
-
-    if (message.content.includes('@scott_g')) {
+    console.log(message)
+    if (message.content.includes('@') && message.content.includes('scott_g')) {
        var user = message.member.tag
        var reply = '!warn @' + user + ' do not ping owner.  Go read the rules #welcome-rules'
        message.reply(reply);
-
     }
-
 });
 
  
